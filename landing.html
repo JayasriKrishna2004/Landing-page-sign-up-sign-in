@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .container {
+            padding: 0 50px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 60px;
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+
+        header .container .logo {
+            cursor: pointer;
+        }
+
+        header .container .logo .logo-text {
+            color: #333;
+            font-size: 20px;
+        }
+
+        header .container .logo .logo-text span {
+            color: #2d7648;
+            font-weight: bold;
+        }
+
+        header .container nav {
+            position: relative;
+        }
+
+        header .container nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        header .container nav ul li {
+            margin-left: 20px;
+            color: #333;
+        }
+
+        header .container nav ul li a:hover {
+            color: #2d7648;
+        }
+
+        header .container nav ul li:last-child {
+            margin-left: 30px;
+        }
+
+        header .container nav ul li:last-child:hover {
+            color: #2d7648;
+            cursor: pointer;
+        }
+
+        header .container nav ul li a {
+            text-decoration: none;
+            color: #001406;
+        }
+
+        .landing {
+            background-image: url(https://miro.medium.com/max/8576/0*PKx2kZonfzAceptO);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .landing .content {
+            padding: 20px;
+        }
+
+        .landing .content h2 {
+            margin-bottom: 20px;
+            font-size: 25px;
+            line-height: 1.2;
+        }
+
+        .landing .content h2 span {
+            color: #2d7648;
+            display: block;
+        }
+
+        .landing .content p {
+            margin-bottom: 40px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .landing .content a {
+            padding: 15px 40px;
+            background-color: #2d7648;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .landing .content a:hover {
+            background-color: #245d3b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-text">
+                    <span>VIEWSPOT</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="landing" id="home">
+        <div class="content">
+            <h2><span>The gladdest moment in human life is a departure into unknown lands</span></h2>
+            <p>WELCOME</p>
+            <a href="#">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
